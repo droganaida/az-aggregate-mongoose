@@ -1,0 +1,12 @@
+{
+  "name": "az-aggregate-mongoose",
+  "version": "1.0.0",
+  "description": "MongoDB/Mongoose aggregation match first Letter (UTF-8). Async\await Mongoose connection and EJS rendering (promisify).",
+  "main": "index.js",
+  "author": "Aida Drogan #BlondieCode",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "2.5.7",
+    "mongoose": "4.13.9"
+  }
+}
