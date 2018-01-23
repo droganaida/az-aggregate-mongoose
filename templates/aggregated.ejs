@@ -1,0 +1,17 @@
+<div class="az-header">
+    <% letters.forEach(function (letter) { %>
+    <a href="#<%= encodeURI(letter) %>"><%= letter %></a>
+    <% }) %>
+</div>
+<% azItems.forEach(function (azItem) { %>
+<div class="row" id="<%= azItem._id.toLowerCase() %>">
+    <h2>
+        <%= azItem._id %> (<%= azItem.count %>)
+    </h2>
+    <% azItem.items.forEach(function (item) { %>
+    <div>
+        <%= item.title %>
+    </div>
+    <% }) %>
+</div>
+<% }) %>

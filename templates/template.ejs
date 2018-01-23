@@ -9,7 +9,11 @@
 <body>
     <main>
         <h1>Ревизия холодильника</h1>
-        <%- include('itemList') %>
+        <% if (page == 'insert') { %>
+            <%- include('itemList') %>
+        <% } else { %>
+            <%- include('aggregated') %>
+        <% } %>
     </main>
     <%- include('footer') %>
 </body>
