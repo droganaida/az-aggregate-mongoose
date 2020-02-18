@@ -36,7 +36,7 @@ const requestHandler = (request, response) => {
         async function parallelMongoQuery() {
 
             const reviewPromises = wordArray.map((word) => {
-                Item.create({title: word})
+                return Item.create({title: word})
                     .catch((err) => {
                         console.error(`Ошибка сервера ${err}`);
                     });
