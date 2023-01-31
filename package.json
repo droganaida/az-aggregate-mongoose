@@ -7,6 +7,6 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "2.5.7",
-    "mongoose": "4.13.9"
+    "mongoose": "5.13.15"
   }
 }
